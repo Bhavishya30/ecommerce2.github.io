@@ -1,0 +1,503 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   font-family: 'Lexend', Times, serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 100;
+    
+    
+
+}
+
+.nav {
+    display: flex;
+    padding: 1rem 0rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    background-color: white;
+   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+
+
+.items {
+    position: relative;
+    margin: 0rem 1rem;
+
+}
+
+.items a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: black;
+    margin: 0rem 0.6rem;
+
+}
+
+#title {
+
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+  
+}
+
+
+.icons {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: Center;
+    margin: 0rem 1rem;
+
+
+}
+
+.icons i {
+    margin: 0rem 0.5rem;
+}
+
+.search {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s all ease;
+
+
+}
+
+.search input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    transition: 0.5s all ease;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 0.8rem 0.8rem;
+    font-size: 0.8rem;
+    cursor:pointer;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-16%, -40%);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    transition: 0.5s all ease;
+    cursor: pointer;
+    
+
+
+
+}
+
+.icon-2 {
+    background-color:white;
+    padding: 0.58rem 0.58rem;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    font-size: 0.8rem;
+    cursor: pointer;
+
+}
+
+.active {
+    width: 20rem;
+    height: 2rem;
+    transition: 0.5s all ease;
+    border-radius: 0;
+}
+
+.active2 {
+    padding: 0rem 0.2rem;
+    transition: 0.5s all ease;
+    caret-color: auto;
+
+
+}
+
+.hamburger {
+    display: none;
+    overflow: hidden;
+}
+
+#title2 {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 800;
+    display: none;
+}
+
+.cart {
+    display: none;
+}
+
+.sidenav {
+
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    transform: translateX(-100%);
+    transition: 0.5s all ease;
+    display: none;
+
+}
+.search2
+{
+    position: relative;
+   
+}
+/*home section starts*/
+.home
+{
+  margin-top:4rem;
+}
+.images
+{
+   width:100%;
+   min-height:25rem;
+   position: relative;
+  
+  
+}
+.images .img
+{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-size: cover !important;
+    background-position: center !important;
+
+}
+.content-1
+{
+    position: relative;
+    width:100%;
+    height:25rem;
+  padding:0rem 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:1rem 0rem;
+}
+.content-1 p
+{
+
+    font-weight: 600;
+}
+.content-1 h2
+{
+    font-family: 'Nunito', Times, serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.content-1 .button-1
+{
+    width:7rem;
+    font-size: 1rem;
+    padding:0.5rem 0.5rem;
+    border:none;
+    cursor: pointer;
+    font-family: 'Nunito', Times, serif;
+    color:black;
+    background-color: rgb(188, 223, 235);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    
+}
+.button-2
+{
+    width:7rem;
+    font-size: 1rem;
+    padding:0.5rem 0.5rem;
+    border:none;
+    cursor: pointer;
+    font-family: 'Nunito', Times, serif;
+    color:black;
+    background-color: rgb(250, 218, 223);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+}
+.button-3
+{
+    width:7rem;
+    font-size: 1rem;
+    padding:0.5rem 0.5rem;
+    border:none;
+    cursor: pointer;
+    font-family: 'Nunito', Times, serif;
+    color:black;
+    background-color: rgb(229, 250, 250);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+/*swiper js starts here*/
+
+
+
+
+
+@media(max-width:700px) {
+    .items {
+        display: none;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        width: 2rem;
+        height: 2rem;
+        padding: 0.5rem 0.5rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+    }
+
+    .line-1 {
+        position: absolute;
+        width: 70%;
+        height: 10%;
+        background-color: black;
+        transition: 0.5s all ease;
+        transform: translateY(-0.5rem);
+    }
+
+    .line-2 {
+        position: absolute;
+        width: 70%;
+        height: 10%;
+        transition: 0.5s all ease;
+        background-color: black;
+
+
+    }
+
+    .line-3 {
+        position: absolute;
+        width: 70%;
+        height: 10%;
+        background-color: black;
+        transition: 0.5s all ease;
+        transform: translateY(0.5rem);
+    }
+
+    #title2 {
+        display: block;
+    }
+
+    .cart {
+        display: block;
+        padding: 0.5rem 0.5rem;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+
+    .nav {
+        padding: 1rem 2rem;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .sidenav {
+        position: absolute;
+        top: 103%;
+        left: 0%;
+        width: 100%;
+        height: 100vh;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        display: block;
+        transform: translateX(-100%);
+        transition: 0.5s all ease;
+        overflow:auto;
+    }
+
+    .active3 {
+        transition: 0.5s all ease;
+        transform: translateX(0%);
+    }
+
+    .active4 {
+        transition: 0.5s all ease;
+        transform: rotate(45deg);
+    }
+
+    .active5 {
+        transition: 0.5s all ease;
+        transform: translateX(-150%);
+    }
+
+    .active1 {
+        transition: 0.5s all ease;
+        transform: rotate(-45deg);
+    }
+    .search2
+    {
+        position: relative;
+        margin:1rem 2rem 0rem 2rem;
+        padding:1.2rem 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        
+
+
+        
+    }
+    .search2 .input-2
+    {
+        position: absolute;
+        width:100%;
+        height:100%;
+        top: 0%;
+        left:0%;
+        font-size: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        border:none;
+        outline:none;
+        padding:0rem 3rem;
+        border-radius:0.2rem;
+        cursor:pointer;
+       
+       
+        
+        
+    }
+    .search2:hover 
+    {
+        box-shadow: rgba(18, 65, 63, 0.16) 0px 3px 6px, rgba(18, 65, 63, 0.16) 0px 3px 6px;
+    }
+    .search-icon2
+    {
+        position: absolute;
+        top:0%;
+        left:0%;
+        height:100%;
+        display: flex;
+        flex-wrap:wrap;
+        align-items: center;
+        padding:0rem 1rem;
+    }
+    .sidenav-items
+    {
+        position: relative;
+        margin:1.5rem 0.5rem;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .sidenav-header
+    {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        font-weight: 500;
+        font-family: 'LEXEND', Times, serif;
+        justify-content: space-between;
+    }
+    .sidenav-item1
+    {
+        position: relative;
+        width: 100%;
+        padding:0.5rem 1rem;
+        justify-content: space-between;
+        cursor:pointer;
+        margin:0.4rem 0rem;
+      
+       
+      
+        
+        
+    }
+    /* .sidenav-item1:hover
+    {
+        border-top:0.2rem solid;
+    } */
+    .content
+    {
+        position: relative;
+        display: none;
+       
+    }
+    .content p
+{
+    font-weight: 500;
+    font-family: 'LEXEND', Times, serif;
+    margin:0.5rem 0rem;
+}
+.dropdown-icon
+{
+    position: relative;
+    transition: 0.5s all ease;
+}
+ .active6 .content
+{
+    position: relative;
+    display: block;
+}
+.active8
+{
+    transition: 0.5s all ease;
+    transform:rotate(180deg);
+}
+.home
+{
+    display: none;
+}
+
+
+  
+  
+  
+    
+
+
+}
+@media(max-width:100px )
+{
+    .search2
+    {
+        display: none;
+       
+    }
+}
