@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
    font-family: 'Lexend', Times, serif;
+   transition: 0.2s all ease;
 }
 
 html {
@@ -64,24 +65,16 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 0rem 1rem;
-    background-color: white;
+    margin-right: 1rem;
     /* background-color: red; */
 
 
 }
-
-.icons i {
-    margin: 0rem 0.5rem;
-    background-color: white;
-    
-}
-
-
 .icon-2 {
     background-color:white;
     padding: 0.5rem 0.5rem;
-    border-radius: 100%;
+    margin:0rem 0.5rem;
+    border-radius:1rem;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     font-size: 0.8rem;
     cursor: pointer;
@@ -123,7 +116,6 @@ header {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     transform: translateX(-100%);
-    transition: 0.5s all ease;
     display: none;
 
 }
@@ -223,7 +215,6 @@ header {
         width: 70%;
         height: 10%;
         background-color: black;
-        transition: 0.5s all ease;
         transform: translateY(-0.5rem);
     }
 
@@ -231,7 +222,6 @@ header {
         position: absolute;
         width: 70%;
         height: 10%;
-        transition: 0.5s all ease;
         background-color: black;
 
 
@@ -242,7 +232,6 @@ header {
         width: 70%;
         height: 10%;
         background-color: black;
-        transition: 0.5s all ease;
         transform: translateY(0.5rem);
     }
 
@@ -271,27 +260,25 @@ header {
         box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
         display: block;
         transform: translateX(-100%);
-        transition: 0.5s all ease;
         overflow:auto;
     }
 
     .active3 {
-        transition: 0.5s all ease;
         transform: translateX(0%);
     }
 
     .active4 {
-        transition: 0.5s all ease;
+        
         transform: rotate(45deg);
     }
 
     .active5 {
-        transition: 0.5s all ease;
+        
         transform: translateX(-150%);
     }
 
     .active1 {
-        transition: 0.5s all ease;
+        
         transform: rotate(-45deg);
     }
     .search2
@@ -391,7 +378,7 @@ header {
 .dropdown-icon
 {
     position: relative;
-    transition: 0.5s all ease;
+    
 }
  .active6 .content
 {
@@ -400,7 +387,7 @@ header {
 }
 .active8
 {
-    transition: 0.5s all ease;
+    
     transform:rotate(180deg);
 }
 .home
