@@ -63,69 +63,24 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: Center;
+    align-items: center;
     margin: 0rem 1rem;
+    background-color: white;
+    /* background-color: red; */
 
 
 }
 
 .icons i {
     margin: 0rem 0.5rem;
-}
-
-.search {
-    position: relative;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s all ease;
-
-
-}
-
-.search input {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0%;
-    left: 0%;
-    border-radius: 2rem;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    transition: 0.5s all ease;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    padding: 0.8rem 0.8rem;
-    font-size: 0.8rem;
-    cursor:pointer;
-}
-
-.search-icon {
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    transform: translate(-16%, -40%);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2rem;
-    font-size: 0.8rem;
-    transition: 0.5s all ease;
-    cursor: pointer;
+    background-color: white;
     
-
-
-
 }
+
 
 .icon-2 {
     background-color:white;
-    padding: 0.58rem 0.58rem;
+    padding: 0.5rem 0.5rem;
     border-radius: 100%;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     font-size: 0.8rem;
@@ -140,13 +95,6 @@ header {
     border-radius: 0;
 }
 
-.active2 {
-    padding: 0rem 0.2rem;
-    transition: 0.5s all ease;
-    caret-color: auto;
-
-
-}
 
 .hamburger {
     display: none;
@@ -188,91 +136,61 @@ header {
 .home
 {
   margin-top:4rem;
+  /* padding-top:4rem; */
 }
-.images
+.slide
 {
-    position: relative;
-   width:100%;
-  min-height:70vh;
- 
-  
-  
-}
-.images .img
-{
-    position: absolute;
-    width:100%;
-    height:100%;
+    display: flex;
+    align-items: center;
+    height:auto;
+    min-height:70vh;
+    padding:2rem;
     background-size: cover !important;
     background-position: center !important;
-
+    padding-left:5rem;
+    
 }
 .content-1
 {
-    position: relative;
-    width:100%;
-    min-height:70vh;
-  padding:0rem 7rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap:1rem 0rem;
-}
-.content-1 p
-{
-
-    font-weight: 600;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ flex-wrap: wrap;
+ gap:1rem 0rem;   
+ 
 }
 .content-1 h2
 {
-    font-family: 'Nunito', Times, serif;
+    font-size: 1.5rem;
+}
+.content-1 h1
+{
     font-size: 2.5rem;
-    font-weight: 600;
 }
 .content-1 .button-1
 {
-    width:7rem;
-    font-size: 1rem;
-    padding:0.5rem 0.5rem;
     border:none;
-    cursor: pointer;
-    font-family: 'Nunito', Times, serif;
-    color:black;
-    background-color: rgb(188, 223, 235);
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    
-}
-.button-2
-{
-    width:7rem;
+    padding:0.5rem 1rem;
     font-size: 1rem;
-    padding:0.5rem 0.5rem;
-    border:none;
-    cursor: pointer;
-    font-family: 'Nunito', Times, serif;
-    color:black;
-    background-color: rgb(250, 218, 223);
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-
-}
-.button-3
-{
-    width:7rem;
-    font-size: 1rem;
-    padding:0.5rem 0.5rem;
-    border:none;
-    cursor: pointer;
-    font-family: 'Nunito', Times, serif;
-    color:black;
-    background-color: rgb(229, 250, 250);
+    background-color:lightblue;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
-/* .swiper-pagination-bullet-active
+.content-1 .button-2
 {
-    
-} */
-/*swiper js starts here*/
-
+    border:none;
+    padding:0.5rem 1rem;
+    font-size: 1rem;
+    background-color:rgb(250, 226, 231);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.content-1 .button-3
+{
+    border:none;
+    padding:0.5rem 1rem;
+    font-size: 1rem;
+    background-color:rgb(206, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
 
 
 
