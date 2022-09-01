@@ -130,7 +130,11 @@ header {
 /*home section starts*/
 .home
 {
-  margin-top:4rem;
+  position: absolute;
+  top:105%;
+  left:0%;
+  width:100%;
+  height:70vh;
   /* padding-top:4rem; */
 }
 .slider-image
@@ -147,7 +151,6 @@ header {
     top:0%;
     left:0%;
 }
-
 
 
 @media(max-width:768px) {
@@ -362,12 +365,4 @@ header {
 
 @media(min-width:1200px)
 {
-      html
-      {
-        font-size: 5;
-      }
-   .items a
-   {
-    font-size: 1.7rem;
-   }
 }
