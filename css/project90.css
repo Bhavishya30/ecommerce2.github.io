@@ -17,6 +17,8 @@
     --font-medium2: 1.3rem;
     --font-bigger2:1.5rem;
     --box: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    --color1:#ff414d;
+   --color2:#00cc90;
 
 
 }
@@ -48,13 +50,16 @@ header {
     align-items: center;
     background-color: white;
     box-shadow: var(--box);
+    
 }
 
 
 
 .items {
     position: relative;
-    margin: 0rem 1rem;
+    display: flex;
+    align-items: center;
+    gap:0rem 3rem;
 
 }
 
@@ -62,9 +67,14 @@ header {
     text-decoration: none;
     font-size: var(--font-medium2);
     font-weight: 500;
-    color: black;
-    margin: 0rem 0.6rem;
+    color: rgba(0, 0, 0, 0.699);
+    
+   
 
+}
+.items a:hover 
+{
+    color:#ff414d
 }
 
 #title {
@@ -73,6 +83,7 @@ header {
     color: black;
     font-size: var(--font-bigger);
     font-weight: 500;
+    color:var(--color1);
 
 
 }
@@ -98,8 +109,15 @@ header {
     box-shadow: var(--box);
     font-size: var(--font-medium);
     cursor: pointer;
+    
 
 }
+.icon-2:hover 
+{
+   background-color: var(--color1);
+   color:#fff;
+}
+
 
 .active {
     width: 20rem;
@@ -414,7 +432,10 @@ header {
         --font-medium2: 1.4rem;
        
     }
-   
+     .items
+     {
+        gap:0rem 1rem;
+     }
     
 
     .items a {
@@ -441,7 +462,7 @@ header {
 
     :root {
 
-        --font-bigger: 2rem;
+        --font-bigger: 2.5rem;
         --font-big2: 1.6rem;
         --font-big: 1.8rem;
         --font-small: 1.1rem;
