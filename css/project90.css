@@ -95,7 +95,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap:0rem 1rem;
+    gap:0rem 1.5rem;
     /* background-color: red; */
 
 
@@ -462,12 +462,12 @@ header {
 
     :root {
 
-        --font-bigger: 2.1rem;
+        --font-bigger: 2.4rem;
         --font-big2: 1.6rem;
         --font-big: 1.8rem;
         --font-small: 1.1rem;
         --font-medium: 1.3rem;
-        --font-medium2: 1.4rem;
+        --font-medium2: 1.6rem;
     }
 
     .nav {
