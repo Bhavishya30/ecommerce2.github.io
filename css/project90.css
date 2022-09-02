@@ -15,6 +15,7 @@
     --font-small: 1rem;
     --font-medium: 1.2rem;
     --font-medium2: 1.3rem;
+    --font-bigger2:1.5rem;
     --box: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
 
@@ -91,11 +92,11 @@ header {
 .icon-2 {
     background-color: white;
     padding: 0.9rem 0.9rem;
-    margin: 0rem 0.7rem;
+    margin: 0rem 0.6rem;
     border-radius: 100%;
     text-align: center;
     box-shadow: var(--box);
-    font-size: var(--font-medium2);
+    font-size: var(--font-medium);
     cursor: pointer;
 
 }
@@ -116,8 +117,7 @@ header {
 #title2 {
     text-decoration: none;
     color: black;
-    font-size: 1.2rem;
-    font-weight: 800;
+    font-size: var(--font-bigger2);
     display: none;
 }
 
@@ -186,6 +186,7 @@ header {
         --font-big: 1.1rem;
         --font-small: 0.8rem;
         --font-medium: 0.9rem;
+        --font-bigger2:2rem;
         --font-medium2: 1rem;
     }
      .hamburger
@@ -259,12 +260,7 @@ header {
         box-shadow: var(--box);
     }
 
-    .nav {
-        padding: 1rem 2rem;
-        cursor: pointer;
-        position: relative;
 
-    }
 
     .sidenav {
         position: absolute;
@@ -410,35 +406,30 @@ header {
 
 @media(max-width:991px) {
     :root {
-        --font-bigger: 1.6rem;
+        --font-bigger: 1.8rem;
         --font-big2: 1.2rem;
         --font-big: 1.3rem;
         --font-small: 0.9rem;
-        --font-medium: 1.5rem;
+        --font-medium: 1.3rem;
         --font-medium2: 1.4rem;
+       
     }
+   
+    
 
     .items a {
         margin: 0rem 0.5rem;
     }
 
     .nav {
-        padding: 1.8rem 0%;
+        padding: 1.8rem 2%;
     }
+    
 
-    .icon-2 {
-        font-size: var(--font-big2);
-        margin: 0rem 0.5rem;
-    }
+   
 
 
-    /*
-       --font-bigger: 2rem;
-    --font-big2: 1.6rem;
-    --font-big: 1.5rem;
-    --font-small: 1rem;
-    --font-medium: 1.2rem;
-    --font-medium2: 1.3rem;*/
+  
 
 }
 
