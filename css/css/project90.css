@@ -1,0 +1,518 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lexend', Times, serif;
+    transition: 0.5s all ease;
+
+
+}
+
+:root {
+    --font-bigger: 2rem;
+    --font-big2: 1.6rem;
+    --font-big: 1.5rem;
+    --font-small: 1rem;
+    --font-medium: 1.2rem;
+    --font-medium2: 1.3rem;
+    --font-bigger2: 1.5rem;
+    --box: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    --color1:#eee;
+   
+
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    /*font-size is 62.5%*/
+}
+
+header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 100;
+
+
+
+
+}
+
+.nav {
+    display: flex;
+    padding: 1rem 2%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: var(--box);
+
+}
+
+
+
+.items {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0rem 3rem;
+
+}
+
+.items a {
+    text-decoration: none;
+    font-size: var(--font-medium2);
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.699);
+    transition: 0.5s all ease;
+
+
+
+}
+.items a:hover 
+{
+    transition: 0.5 all ease;
+    color:black;
+    
+}
+
+
+
+#title {
+
+    text-decoration: none;
+    color: black;
+    font-size: var(--font-bigger);
+    font-weight: 500;
+
+
+}
+
+
+.icons {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem 1.5rem;
+    /* background-color: red; */
+
+
+}
+
+.icon-2 {
+    background-color: white;
+    padding: 0.9rem 0.9rem;
+    border-radius: 100%;
+    text-align: center;
+    box-shadow: var(--box);
+    font-size: var(--font-medium);
+    cursor: pointer;
+
+
+}
+
+
+
+.active {
+    width: 20rem;
+    height: 2rem;
+    transition: 0.5s all ease;
+    border-radius: 0;
+}
+
+
+.hamburger {
+    display: none;
+    overflow: hidden;
+}
+
+#title2 {
+    text-decoration: none;
+    color: black;
+    font-size: var(--font-bigger2);
+    display: none;
+}
+
+.cart {
+    display: none;
+}
+
+.sidenav {
+
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    box-shadow: var(--box);
+    transform: translateX(-100%);
+    display: none;
+
+}
+.sidenav-icons
+{
+    display: none;
+}
+
+.search2 {
+    position: relative;
+
+}
+
+/*home section starts*/
+.home {
+    position: relative;
+    width: 100%;
+    margin-top: 6.8rem;
+    /* padding-top:4rem; */
+}
+
+.slider-image {
+    width: 100%;
+    height: 65vh;
+    position: relative;
+}
+
+.slider-image img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+.cards {
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    left: 0%;
+    background-color: red;
+    width: 10rem;
+    height: 10rem;
+}
+
+
+@media(max-width:780px) {
+
+    :root {
+        --font-bigger: 1.3rem;
+        --font-big2: 1.2rem;
+        --font-big: 1.1rem;
+        --font-small: 0.8rem;
+        --font-medium: 0.9rem;
+        --font-bigger2: 2rem;
+        --font-medium2: 1rem;
+    }
+
+    .hamburger {
+        margin: 0rem 1.5rem;
+    }
+
+
+    .items {
+        display: none;
+    }
+
+    .icons {
+        display: none;
+    }
+
+
+
+
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        width: 3rem;
+        height: 3rem;
+        padding: 0.5rem 0.5rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: var(--box);
+
+    }
+
+    .line-1 {
+        position: absolute;
+        width: 70%;
+        height: 10%;
+        background-color: black;
+        transform: translateY(-0.7rem);
+    }
+
+    .line-2 {
+        position: absolute;
+        width: 70%;
+        height: 10%;
+        background-color: black;
+
+
+    }
+
+    .line-3 {
+        position: absolute;
+        width: 70%;
+        height: 10%;
+        background-color: black;
+        transform: translateY(0.7rem);
+    }
+
+
+    #title2 {
+        display: block;
+    }
+    
+    .sidenav-icons
+    {
+        display: flex;
+        align-items: center;
+        gap:0rem 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        
+        
+    }
+    .sidenav-icons i
+    {
+        cursor:pointer;
+    }
+
+    .cart {
+        display: block;
+        font-size: 2rem;
+        padding: 0.5rem 0.5rem;
+        box-shadow: var(--box);
+
+    }
+
+
+
+    .sidenav {
+        position: absolute;
+        top: 103%;
+        left: 0%;
+        width: 100%;
+        height: 100vh;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        display: block;
+        transform: translateX(-100%);
+        overflow: auto;
+    }
+
+    .active3 {
+        transform: translateX(0%);
+    }
+
+    .active4 {
+
+        transform: rotate(45deg);
+    }
+
+    .active5 {
+
+        transform: translateX(-150%);
+    }
+
+    .active1 {
+
+        transform: rotate(-45deg);
+    }
+
+    .search2 {
+        position: relative;
+        margin: 1rem 2rem 0rem 2rem;
+        padding: 1.5rem 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        
+
+
+
+
+    }
+
+    .search2 .input-2 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0%;
+        font-size: 1rem;
+        box-shadow: var(--box);
+        border: none;
+        outline: none;
+        padding: 0rem 3rem;
+        border-radius: 0.2rem;
+        cursor: pointer;
+
+
+
+
+    }
+
+    .search2:hover {
+        box-shadow: rgba(18, 65, 63, 0.16) 0px 3px 6px, rgba(18, 65, 63, 0.16) 0px 3px 6px;
+    }
+
+    .search-icon2 {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0rem 1rem;
+    }
+
+    .sidenav-items {
+        position: relative;
+        margin: 1.5rem 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+
+    .sidenav-header {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: var(--font-bigger);
+        justify-content: space-between;
+    }
+
+    .sidenav-item1 {
+        position: relative;
+        width: 100%;
+        padding: 0.5rem 1rem;
+        justify-content: space-between;
+        cursor: pointer;
+        margin: 0.4rem 0rem;
+        border-radius: 0.5rem;
+        transition: 0.2s all ease;
+    }
+    .sidenav-item1:hover
+    {
+          transition: 0.2s all ease;
+          background-color: var(--color1);
+          position: relative;
+    }
+   
+    .content {
+        position: relative;
+        display: none;
+
+    }
+
+    .content p {
+
+        transition: 0.2s all ease;
+        margin: 1rem 0.5rem;
+        font-size: var(--font-big2);
+    }
+   
+
+   
+
+    .dropdown-icon {
+        transition: 0.2s all ease;
+        position: relative;
+
+    }
+
+    .active6 .content {
+        position: relative;
+        display: block;
+    }
+
+    .active8 {
+
+        transform: rotate(180deg);
+    }
+
+    .home {
+        display: none;
+    }
+
+}
+
+@media(max-width:991px) {
+    :root {
+        --font-bigger: 1.8rem;
+        --font-big2: 1.2rem;
+        --font-big: 1.3rem;
+        --font-small: 0.9rem;
+        --font-medium: 1.3rem;
+        --font-medium2: 1.4rem;
+
+    }
+
+    .items {
+        gap: 0rem 1rem;
+    }
+
+    .icons {
+        gap: 0rem 1rem;
+    }
+
+
+    .items a {
+        margin: 0rem 0.5rem;
+    }
+
+    .nav {
+        padding: 1.8rem 1.5%;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+@media(min-width:1000px) {
+
+    :root {
+
+        --font-bigger: 2.4rem;
+        --font-big2: 1.6rem;
+        --font-big: 1.8rem;
+        --font-small: 1.1rem;
+        --font-medium: 1.3rem;
+        --font-medium2: 1.6rem;
+    }
+
+    .nav {
+        padding: 1.8rem 2%;
+    }
+}
+
+
+
+
+
+/*
+       --font-bigger: 2rem;
+    --font-big2: 1.6rem;
+    --font-big: 1.5rem;
+    --font-small: 1rem;
+    --font-medium: 1.2rem;
+    --font-medium2: 1.3rem;*/
