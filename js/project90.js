@@ -62,4 +62,12 @@ var swiper = new Swiper(".home-slider", {
     grabCursor:true,
   },
 });
+/*swiper js for second slider */
+var swiper = new Swiper(".home-slider2", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    grabCursor:true
+  },
+});
 

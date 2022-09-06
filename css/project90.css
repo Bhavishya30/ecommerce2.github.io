@@ -17,8 +17,8 @@
     --font-medium2: 1.3rem;
     --font-bigger2: 1.5rem;
     --box: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    --color1:#eee;
-   
+    --color1: #eee;
+
 
 }
 
@@ -47,7 +47,7 @@ header {
     justify-content: space-between;
     position: relative;
     align-items: center;
-    background-color: transparent;
+    background-color: white;
     box-shadow: var(--box);
 
 }
@@ -72,11 +72,11 @@ header {
 
 
 }
-.items a:hover 
-{
+
+.items a:hover {
     transition: 0.5 all ease;
-    color:black;
-    
+    color: black;
+
 }
 
 
@@ -90,6 +90,7 @@ header {
 
 
 }
+
 
 
 .icons {
@@ -155,8 +156,8 @@ header {
     display: none;
 
 }
-.sidenav-icons
-{
+
+.sidenav-icons {
     display: none;
 }
 
@@ -183,18 +184,135 @@ header {
     position: relative;
     width: 100%;
     height: 100%;
-    top: 0%;
-    left: 0%;
+    object-fit: cover;
+}
+
+/*home section ends here*/
+.home2 {
+    position: relative;
+    margin-top: 8rem;
+    display: none;
+
+}
+
+.slide2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem 0rem;
+    min-height:40rem;
+}
+
+.slide2 .slider-image2 {
+    flex: 1 1 42rem;
+    text-align: center;
+}
+
+.slider-image2 img {
+    height: 30rem;
+}
+
+.home2-content {
+    flex: 1 1 42rem;
+    text-align: center;
+}
+
+.home2-content span {
+    font-size: var(--font-bigger);
+}
+
+.home2-content h3 {
+    font-size: 3rem;
+}
+
+.home2-btn {
+    background-color: #00cc90;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    color: black;
+    font-size:1.7rem;
+    display: inline-block;
+    margin-top: 1rem;
+}
+.home2-btn:hover 
+{
+    background-color: #00cc8f36;
+}
+
+
+
+
+
+/*cards section starts here*/
+
+.cards-section {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem 2rem;
+    margin: 5rem 0rem;
+    display: none;
+
+
 }
 
 .cards {
+    height: 18rem;
+    width: 35rem;
+    position: relative;
+    padding: 0.5rem 0rem 0rem 0rem;
+    background-color: #f2f6f7;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.cards-image {
+    position: relative;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.cards-para {
     position: absolute;
-    z-index: 10;
-    top: 100%;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    margin-right: 1rem;
+    padding: 0rem 1rem;
+    display: flex;
+    gap: 1.5rem 0rem;
+    flex-direction: column;
+}
+
+.cards-para h3 {
+    font-size: var(--font-bigger);
+
+}
+
+.cards-para .cards-para2 {
+    font-size: 1.4rem;
+}
+
+.cards-btn {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    width: 8rem;
+    font-size: var(--font-medium2);
+}
+
+.cards-btn::after {
+    content: " ";
+    position: absolute;
+    top: 120%;
     left: 0%;
-    background-color: red;
-    width: 10rem;
-    height: 10rem;
+    width: 100%;
+    height: 10%;
+    background-color: black;
 }
 
 
@@ -270,21 +388,20 @@ header {
     #title2 {
         display: block;
     }
-    
-    .sidenav-icons
-    {
+
+    .sidenav-icons {
         display: flex;
         align-items: center;
-        gap:0rem 1rem;
+        gap: 0rem 1rem;
         justify-content: center;
         flex-wrap: wrap;
 
-        
-        
+
+
     }
-    .sidenav-icons i
-    {
-        cursor:pointer;
+
+    .sidenav-icons i {
+        cursor: pointer;
     }
 
     .cart {
@@ -334,7 +451,7 @@ header {
         padding: 1.5rem 1rem;
         display: flex;
         flex-wrap: wrap;
-        
+
 
 
 
@@ -403,13 +520,13 @@ header {
         border-radius: 0.5rem;
         transition: 0.2s all ease;
     }
-    .sidenav-item1:hover
-    {
-          transition: 0.2s all ease;
-          background-color: var(--color1);
-          position: relative;
+
+    .sidenav-item1:hover {
+        transition: 0.2s all ease;
+        background-color: var(--color1);
+        position: relative;
     }
-   
+
     .content {
         position: relative;
         display: none;
@@ -422,9 +539,9 @@ header {
         margin: 1rem 0.5rem;
         font-size: var(--font-big2);
     }
-   
 
-   
+
+
 
     .dropdown-icon {
         transition: 0.2s all ease;
@@ -443,6 +560,21 @@ header {
     }
 
     .home {
+        display: none;
+    }
+    .home2
+    {
+        display: block;
+    }
+    .home2 h3
+    {
+      font-size: 2.5rem;
+    }
+    .home2-btn
+    {
+        font-size: 1.5rem;
+    }
+    .cards-section {
         display: none;
     }
 
@@ -478,7 +610,9 @@ header {
 
 
 
-
+    .cards-section {
+        display: none;
+    }
 
 
 
