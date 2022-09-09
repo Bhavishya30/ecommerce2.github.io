@@ -335,17 +335,22 @@ header {
     .cards
     {
         justify-content: center !important;
-       gap:1rem 0.5rem !important;
+       gap:0rem 0rem !important;
+    }
+    .cards-para
+    {
+        margin-right:0.5rem !important;
     }
     .cards-para h3
     {
         font-size: 2rem !important;
+        
     }
    
    
     .cards-image
     {
-        width:10rem !important;
+        width:13rem !important;
     }
   
     
@@ -618,27 +623,18 @@ header {
     {
         font-size: 1.5rem;
     }
+    .cards
+    {
+        display: flex;
+        justify-content: space-around !important;
+        
+    }
     .cards-image
     {
         width:13rem !important;
+       
     }
-    .cards-para
-    {
-      gap:2rem 1rem !important;   
-    }
-    .cards-section
-    {
-        display: flex;
-
-    }
-  .cards-para
-  {
-    gap:1rem 0rem !important;
-  }
- .cards-section
- {
-    display: block !important;
- }
+  
 }
 
 @media(max-width:1050px) {
