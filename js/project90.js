@@ -71,3 +71,49 @@ var swiper = new Swiper(".home-slider2", {
   },
 });
 
+var swiper = new Swiper(".card-slider", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop:true,
+  breakpoints: {
+    360: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      loop:true,
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+ 
+    },
+  },
+});
+
+
+
+
+
+
+
+
+// .cards-image
+// {
+//     width:40%;
+// }
+// .cards
+// {
+//    max-width:31rem;
+//    align-items: center;
+//    justify-content: center;
+// }
+// .cards-para
+// {
+//     padding:0rem 0rem;
+//     gap:1rem 0rem;
+//     padding:0rem 1rem;
+
+// }
