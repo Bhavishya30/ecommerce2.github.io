@@ -198,7 +198,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem 0rem;
-    min-height:40rem;
+    min-height:30rem;
 }
 
 .slide2 .slider-image2 {
@@ -207,7 +207,7 @@ header {
 }
 
 .slider-image2 img {
-    height: 30rem;
+    height: 20rem;
 }
 
 .home2-content {
