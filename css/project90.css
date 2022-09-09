@@ -273,8 +273,8 @@ header {
 
 
 .cards {
-    height: 15rem;
-    width: 31rem;
+    height: 18rem;
+    width: 33rem;
     position: relative;
     padding: 0.5rem 0rem 0rem 0rem;
     background-color: #f2f6f7;
@@ -288,6 +288,7 @@ header {
 
 .cards-image {
     position: relative;
+    
     height: 100%;
     object-fit: cover;
 
@@ -299,6 +300,7 @@ header {
   
     display: flex;
     gap:1rem 0rem;
+    margin-right: 1.5rem;
     flex-direction: column;
 }
 
@@ -333,7 +335,7 @@ header {
     .cards
     {
         justify-content: center !important;
-       gap:1rem 1rem !important;
+       gap:1rem 0.5rem !important;
     }
     .cards-para h3
     {
@@ -639,7 +641,7 @@ header {
  }
 }
 
-@media(max-width:991px) {
+@media(max-width:1050px) {
     :root {
         --font-bigger: 1.8rem;
         --font-big2: 1.2rem;

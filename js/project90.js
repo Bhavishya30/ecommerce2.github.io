@@ -93,7 +93,7 @@ var swiper = new Swiper(".card-slider", {
     },
     1024: {
       slidesPerView: 3,
-      spaceBetween: 50,
+      spaceBetween: 10,
      
  
     },
