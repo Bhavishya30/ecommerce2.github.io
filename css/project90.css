@@ -7,18 +7,16 @@
 
 
 }
-
 :root {
-    --font-bigger: 2rem;
-    --font-big2: 1.6rem;
-    --font-big: 1.5rem;
-    --font-small: 1rem;
-    --font-medium: 1.2rem;
-    --font-medium2: 1.3rem;
-    --font-bigger2: 1.5rem;
-    --box: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    --color1: #eee;
 
+    --font-bigger: 2.4rem;
+    --font-big2: 1.6rem;
+    --font-big: 1.8rem;
+    --font-small: 1.1rem;
+    --font-medium: 1.3rem;
+    --font-medium2: 1.6rem;
+    --box: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+   --color1: #eee;
 
 }
 
@@ -42,7 +40,7 @@ header {
 
 .nav {
     display: flex;
-    padding: 1rem 2%;
+    padding: 1.8rem 2%;
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
@@ -252,7 +250,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 0rem 2rem;
+    gap: 0rem 0rem;
     margin: 5rem 1rem;
     display: none;
     
@@ -275,17 +273,17 @@ header {
 
 
 .cards {
-    height: 18rem;
+    height: 15rem;
     width: 31rem;
     position: relative;
     padding: 0.5rem 0rem 0rem 0rem;
     background-color: #f2f6f7;
     overflow: hidden;
     z-index: 1;
-    gap:1rem 0rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap:0rem 1rem;
 }
 
 .cards-image {
@@ -300,7 +298,7 @@ header {
    
   
     display: flex;
-    gap: 1.5rem 0rem;
+    gap:1rem 0rem;
     flex-direction: column;
 }
 
@@ -335,11 +333,17 @@ header {
     .cards
     {
         justify-content: center !important;
-        gap:2rem 0rem !important;
+       gap:1rem 1rem !important;
     }
+    .cards-para h3
+    {
+        font-size: 2rem !important;
+    }
+   
+   
     .cards-image
     {
-        width:12rem !important;
+        width:10rem !important;
     }
   
     
@@ -389,10 +393,8 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #f2f6f7;
-
-        
-        /* box-shadow: var(--box); */
+        background-color: white;
+        box-shadow: var(--box);
 
     }
 
@@ -439,8 +441,8 @@ header {
 
     .sidenav-icons i {
         cursor: pointer;
-        background-color: #f2f6f7;
-        box-shadow:none;
+        background-color:white;
+        box-shadow:var(--box);
     }
 
     .cart {
@@ -529,6 +531,7 @@ header {
         flex-wrap: wrap;
         align-items: center;
         padding: 0rem 1rem;
+        
     }
 
     .sidenav-items {
@@ -615,11 +618,11 @@ header {
     }
     .cards-image
     {
-        width:15rem;
+        width:13rem !important;
     }
     .cards-para
     {
-      margin:0rem 2rem;    
+      gap:2rem 1rem !important;   
     }
     .cards-section
     {
@@ -628,7 +631,7 @@ header {
     }
   .cards-para
   {
-    gap:0.5rem 0rem !important;
+    gap:1rem 0rem !important;
   }
  .cards-section
  {
@@ -670,9 +673,12 @@ header {
     .cards
    {
     justify-content: center;
-    gap:1rem 1rem;
+    gap:0rem 2rem;
    }
-   
+   .cards-para
+   {
+    gap:1.5rem 0rem;
+   }
   .cards-section
   {
     display: block !important;
@@ -683,32 +689,4 @@ header {
   }
 }
 
-
-
-@media(min-width:1000px) {
-
-    :root {
-
-        --font-bigger: 2.4rem;
-        --font-big2: 1.6rem;
-        --font-big: 1.8rem;
-        --font-small: 1.1rem;
-        --font-medium: 1.3rem;
-        --font-medium2: 1.6rem;
-    }
-
-    .nav {
-        padding: 1.8rem 2%;
-    }
-    .cards
-    {
-        width:31rem !important;
-        justify-content: center;
-        gap:0rem 2rem;
-    }
-    .cards-image
-    {
-        width: 13rem;
-    }
-}
 
