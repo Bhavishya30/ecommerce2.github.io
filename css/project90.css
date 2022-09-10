@@ -362,9 +362,14 @@ header {
     {
         width:13rem !important;
     }
+    .hamburger
+    {
+        box-shadow: none !important;
+    }
     .sidenav-icons i
     {
         font-size: 1.65rem;
+        box-shadow: none !important;
     }
   
     
