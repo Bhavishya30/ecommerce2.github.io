@@ -352,11 +352,19 @@ header {
     {
         font-size:1.6rem;
     }
+    .line-1,.line-2,.line-3
+    {
+        width:65% !important;
+    }
    
    
     .cards-image
     {
         width:13rem !important;
+    }
+    .sidenav-icons i
+    {
+        font-size: 1.65rem;
     }
   
     
@@ -546,6 +554,7 @@ header {
         padding: 0rem 1rem;
         
     }
+    
 
     .sidenav-items {
         position: relative;
