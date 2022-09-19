@@ -57,7 +57,7 @@ var swiper = new Swiper(".home-slider", {
   pagination: {
     el: ".swiper-pagination",
     clickable:true,
-    dynamicBullets: true,
+    // dynamicBullets: true,
     loop:true,
     grabCursor:true,
   },
@@ -101,7 +101,28 @@ var swiper = new Swiper(".card-slider", {
 });
 
 
-
-
+/*product-cards*/
+var swiper = new Swiper(".arrivals-slider", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 0,
+    },
+  },
+});
 
 
