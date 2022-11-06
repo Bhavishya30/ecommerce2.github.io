@@ -900,7 +900,7 @@ header {
 {
     width:100%;
     display: flex;
-    justify-content: left;
+    justify-content: left;  
     font-size: 1.5rem;
 }
 .para-1-info
@@ -1012,8 +1012,15 @@ header {
     {
         display: flex;
         flex-direction: column;
-        gap:2rem 0rem;
+        gap:3rem 0rem !important;
+        margin:0rem 1rem !important;
     }
+    .para-1
+    {
+      
+        margin:0rem 2rem;
+    }
+    
 
 
 
@@ -1035,6 +1042,18 @@ header {
     .deal-btn {
         margin: 0rem 0rem 2rem 0rem !important;
     }
+    .para-section2
+    {
+        margin:1rem 1rem !important;
+    }
+    .para-1
+    {
+      
+        margin:0rem 1rem;
+        
+    }
+
+ 
 
 }
 
@@ -1337,8 +1356,10 @@ header {
     }
     .para-section2
     {
-        display: flex;
+        gap:1rem 1rem !important;
     }
+    
+    
 
 }
 
@@ -1381,11 +1402,11 @@ header {
     .para-section2
     {
         justify-content: center !important;
-        margin:1rem 0rem !important;
-        gap:2rem 1rem !important; 
+        gap:0.5rem 0.5rem !important; 
         display: flex;
     }
-   
+    
+ 
 
 
 
@@ -1423,6 +1444,10 @@ header {
         gap:1rem 0rem;
         justify-content: space-between;
         display: flex;
+    }
+    .para-1
+    {
+        width:33rem !important;
     }
     
 }
