@@ -860,60 +860,8 @@ header {
     opacity: 1;
     position: relative;
 }
-.para-section
-{
-    margin:10rem 0rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap:0rem 0.2rem;
-    justify-content: center;
-    align-items: center;
-}
-.para-section2
-{
-    margin:10rem 0rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap:0rem 0.2rem;
-    justify-content: center;
-    align-items: center;
-    display: none;
-}
-.para-1
-{
-    display: flex;
-    gap:0rem 2rem;
-    justify-content: center;
-    align-items: center;
-    background-color: #e9e9e9;
-   width:28rem;
-   padding:3rem 0rem;
-}
-.para-1 i
-{
-    font-size: 3rem;
-    color:#fd3b3e;
-}
 
 
-.para-title
-{
-    width:100%;
-    display: flex;
-    justify-content: left;  
-    font-size: 1.5rem;
-}
-.para-1-info
-{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap:0.5rem 0rem;
-}
-.para-1-item
-{
-    width:100%;
-}
 @media(max-width:480px) {
     .border-section {
         margin: 0rem 0rem !important;
@@ -1015,11 +963,7 @@ header {
         gap:3rem 0rem !important;
         margin:0rem 1rem !important;
     }
-    .para-1
-    {
-      
-        margin:0rem 2rem;
-    }
+   
     
 
 
@@ -1042,16 +986,8 @@ header {
     .deal-btn {
         margin: 0rem 0rem 2rem 0rem !important;
     }
-    .para-section2
-    {
-        margin:1rem 1rem !important;
-    }
-    .para-1
-    {
-      
-        margin:0rem 1rem;
-        
-    }
+   
+    
 
  
 
@@ -1354,10 +1290,7 @@ header {
     .deal {
         padding: 0rem 7rem !important;
     }
-    .para-section2
-    {
-        gap:1rem 1rem !important;
-    }
+   
     
     
 
@@ -1399,12 +1332,6 @@ header {
     .deal {
         padding: 0rem 10rem;
     }
-    .para-section2
-    {
-        justify-content: center !important;
-        gap:0.5rem 0.5rem !important; 
-        display: flex;
-    }
     
  
 
@@ -1434,21 +1361,7 @@ header {
     {
         width: 25rem !important;
     }
-    .para-section
-    {
-        display: none;
-    }
-    .para-section2
-    {
-        margin:0rem 2rem;
-        gap:1rem 0rem;
-        justify-content: space-between;
-        display: flex;
-    }
-    .para-1
-    {
-        width:33rem !important;
-    }
+   
     
 }
 
