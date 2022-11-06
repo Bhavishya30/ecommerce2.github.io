@@ -158,6 +158,120 @@ header {
 
 
 }
+.icon-3
+{
+ position: relative; 
+    
+}
+
+.icon-3-content
+{
+    position: absolute;
+    top:180%;
+    left:50%;
+    transform:translateX(-50%);
+    content:" ";
+    width:20rem;
+    height:25rem;
+    display: none;
+    padding:2rem 2rem;
+    background-color: #1b1d28;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.active11
+{
+    display:block;
+}
+.icon-3-box
+{
+    display: flex;
+    align-items: center;
+    gap:0rem 1rem;
+}
+.icon-3-box2
+{
+    display: flex;
+    margin:1rem 0rem;
+    justify-content: center;
+    background-color: #222533;
+    padding:1rem 0.5rem;
+}
+.icon-3-box2:hover
+{
+    background-color:white;
+}
+.icon-3-item1
+{
+    padding:1rem 0rem;
+    color:white;
+    display: flex;
+    gap:0rem 1rem;
+}
+.icon-3-item1 a 
+{
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+}
+.icon-3-item2
+{
+    padding:1rem 0rem;
+    color:white;
+    display: flex;
+    gap:0rem 1rem;
+}
+.icon-3-item2 a 
+{
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+}
+.icon-3-item3
+{
+    padding:1rem 0rem;
+    color:white;
+    display: flex;
+    gap:0rem 1rem;
+}
+.icon-3-item3 a 
+{
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+}
+.icon-3-item4
+{
+    padding:1rem 0rem;
+    color:white;
+    display: flex;
+    gap:0rem 1rem;
+}
+.icon-3-item4 a 
+{
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+}
+.icon-3-logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:4rem;
+    height:4rem;
+    border-radius: 100%;
+    background-color: #e9e9e9;
+    color:black;
+}
+.icon-3-title
+{
+    position: relative;
+    display: flex;
+    text-decoration:none;
+    color:white;
+    font-weight: 200;
+}
+
 
 
 
