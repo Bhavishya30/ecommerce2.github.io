@@ -20,6 +20,9 @@
     --box: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     --color1: #eee;
     --color2: #f0f0f0;
+    --swiper-navigation-size: 2rem !important;
+
+
 
 }
 
@@ -151,6 +154,7 @@ header {
     font-size: var(--font-medium);
     cursor: pointer;
     position: relative;
+
 
 
 }
@@ -288,87 +292,6 @@ header {
     margin: 5rem 13rem;
 }
 
-.cards-section-1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-
-}
-
-.cards {
-    width: 33rem;
-    height: 18rem;
-    position: relative;
-    background-color: white;
-    box-shadow: var(--box);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0.5rem;
-    gap: 0rem 1.5rem;
-}
-
-.cards::after {
-    content: " ";
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    clip-path: circle(26.1% at 100% 100%);
-    transition: 0.3s all ease;
-    background-color: #f0f4f6;
-    /* background-color: transparent; */
-}
-
-.cards img {
-
-    position: relative;
-    height: 100%;
-    object-fit: cover;
-}
-
-.cards-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    gap: 1rem 0rem;
-}
-
-.cards-info h3 {
-    font-size: var(--font-bigger);
-}
-
-.cards-para {
-    font-size: 1.4rem;
-
-}
-
-.cards-section-2 {
-    display: none;
-}
-
-.cards-btn {
-    text-decoration: none;
-    color: black;
-    font-size: var(--font-medium2);
-    width: 8rem;
-    position: relative;
-}
-
-.cards-btn::after {
-    content: " ";
-    position: absolute;
-    top: 129%;
-    left: 0%;
-    width: 100%;
-    height: 10%;
-    font-size: 1.6rem;
-    background-color: black;
-}
-
 .arrivals-section {
     margin: 10rem 0rem 5.5rem 0rem;
 }
@@ -406,8 +329,8 @@ header {
     justify-content: center;
 
 }
-.arrivals-list-1
-{
+
+.arrivals-list-1 {
     display: flex;
     justify-content: center;
     display: none;
@@ -445,10 +368,11 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid #e9e9e9;
-    border-bottom: 0px;
-    border-top: 0px;
     padding: 2rem 0rem 0rem 0rem;
+    margin: 2rem 0rem 2rem 0.1rem;
+    cursor: pointer;
+
+
 }
 
 .arrival-cards-2 {
@@ -541,10 +465,12 @@ header {
 
 .arrival-cards:hover {
 
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px,
+        rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
 }
-.arrivals-heading
-{
+
+.arrivals-heading {
     position: relative;
 }
 
@@ -553,7 +479,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0rem;
+    padding: 1rem 0rem 0rem 0rem;
     position: relative;
 }
 
@@ -578,6 +504,41 @@ header {
 
 }
 
+.arrival-cards-icon {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin: 2rem 2rem;
+    font-size: 1.3rem;
+    color: rgb(88, 86, 86);
+    transition: 0s all ease;
+    display: none;
+
+
+}
+
+.arrival-cards-icon-1 {
+
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    margin: 2rem 2rem;
+    font-size: 1.3rem;
+    color: rgb(88, 86, 86);
+    transition: 0s all ease;
+    display: none;
+}
+
+.arrival-cards-icon i:hover {
+    color: #fd3b3e;
+}
+
+.arrival-cards-icon-1:hover {
+
+    color: #fd3b3e;
+}
+
+
 .product-cart {
     text-decoration: none;
     font-size: 1.2rem;
@@ -586,6 +547,20 @@ header {
     padding: 0rem 0rem;
     text-align: center;
     padding: 1rem 0rem;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+
+}
+.seller-cards .product-cart
+{
+    text-decoration: none;
+    font-size: 1.2rem;
+    opacity: 0;
+    width: 100%;
+    padding: 0rem 0rem;
+    text-align: center;
+    padding: 1rem 0rem;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+
 }
 
 .arrival-cards:hover .product-cart {
@@ -594,6 +569,14 @@ header {
     opacity: 1;
     position: relative;
 
+}
+
+.arrival-cards:hover .arrival-cards-icon {
+    display: block;
+}
+
+.arrival-cards:hover .arrival-cards-icon-1 {
+    display: block;
 }
 
 .arrival-image {
@@ -607,7 +590,276 @@ header {
     object-fit: contain;
 }
 
+.deal-section {
+    margin: 10rem 0rem 10rem 0rem;
+    background-color: rgba(0, 0, 0, 0.055);
+}
 
+.deal {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 25rem;
+    position: relative;
+    /* background-color: #e9e9e9; */
+}
+
+.deal img {
+    height: 40rem;
+}
+
+.deal-info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 8rem 0rem 0rem 0rem;
+    align-items: center;
+    gap: 5rem 0rem;
+
+}
+
+.deal-info .deal-title {
+
+
+    font-size: 2.8rem;
+    position: relative;
+
+}
+
+.deal-title::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5rem;
+    height: 0.3rem;
+    margin: 2rem 0rem;
+    border-radius: 0.5rem;
+    background-color: #fd3b3e;
+}
+
+.deal-info2 {
+    display: flex;
+    gap: 0rem 1.5rem;
+}
+
+.deal-para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.deal-para h2 {
+    color: #fd3b3e;
+    font-size: 3rem;
+}
+
+.deal-btn {
+    padding: 0.8rem 2.5rem;
+    position: relative;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    z-index: 200;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+.deal-btn::after {
+    content: " ";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: 0.5s all cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    background-color: #fd3b3e;
+    transform: translateX(-100%);
+}
+
+.deal-btn:hover::after {
+    transform: translateX(0%);
+}
+
+.border-section2 {
+    margin: 5rem 10rem;
+}
+
+.seller-slider {
+    position: relative;
+}
+
+.seller-image {
+    position: relative;
+    padding: 2rem 0rem;
+
+}
+
+.seller-image img {
+    width: 100%;
+    height: 10rem;
+    object-fit: contain;
+}
+
+.seller-cards {
+    margin: 2rem 0rem 2rem 0.1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: visible;
+    padding: 3rem 0rem  0rem 0rem;
+    cursor: pointer;
+}
+
+.seller-cards:hover {
+
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px,
+        rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.seller-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem 0rem 0rem;
+    position: relative;
+}
+
+
+.seller-content h6 {
+
+    font-size: 1.3rem;
+    margin: 0.2rem 0rem;
+
+}
+
+.seller-content h6:hover {
+    color: #b5aec4;
+    cursor: pointer;
+}
+
+.seller-content span {
+
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fe4c50;
+    margin: 1rem 0rem;
+
+}
+.seller-cards-icon
+{
+    position: absolute;
+    top:0%;
+    left:0%;
+    font-size:1.3rem;
+    margin:2rem 2rem;
+    display: none;
+}
+.seller-cards-icon-1
+{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    font-size: 1.3rem;
+    margin:2rem 2rem;
+    display: none;
+}
+.seller-cards:hover .seller-cards-icon
+{
+    display: block;
+}
+.seller-cards-icon i:hover
+{
+    color:#fd3b3e;
+}
+.seller-cards-icon-1:hover
+{
+    color:#fd3b3e;
+}
+.seller-cards:hover .seller-cards-icon-1
+{
+    display: block;
+}
+
+.seller-section .seller-title {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    font-size: 2rem;
+    position: relative;
+
+}
+
+.seller-title::after {
+    display: block;
+    content: " ";
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5rem;
+    height: 0.5rem;
+    border-radius: 1rem;
+    background-color: #fe4c50;
+    margin: 1.5rem 0rem 3rem 0rem;
+
+}
+
+.seller-content:hover .product-cart {
+    background-color: #fe4c50;
+    color: white;
+    opacity: 1;
+    position: relative;
+
+}
+
+
+.swiper-button-next {
+    z-index: 2rem !important;
+    font-size: 1.2rem !important;
+    color: white !important;
+}
+
+.swiper-button-next::before {
+    content: " ";
+    position: absolute;
+    width: 3rem;
+    height: 7rem;
+    z-index: -1 !important;
+    background-color: #d3d3d6 !important;
+}
+.swiper-button-prev::before
+{
+    content:" ";
+    position: absolute;
+    width:3rem;
+    height:7rem;
+    z-index:-1;
+    background-color: #d3d3d6;
+}
+
+.swiper-button-prev {
+    font-size: 1.2rem !important;
+    color:white !important;
+}
+.seller-cards:hover .product-cart
+{
+    background-color: #fe4c50;
+    color: white;
+    opacity: 1;
+    position: relative;
+}
 
 
 
@@ -617,23 +869,10 @@ header {
         margin: 0rem 0rem !important;
     }
 
-    .cards-info h2 {
-        font-size: 2rem !important;
-    }
-
-    .cards-info {
-        margin-right: 0.5rem !important;
-    }
-
     .line-1,
     .line-2,
     .line-3 {
         width: 65% !important;
-    }
-
-
-    .cards img {
-        width: 12rem !important;
     }
 
     .hamburger {
@@ -680,23 +919,66 @@ header {
         box-shadow: none !important;
     }
 
-    .cards {
-        justify-content: center !important;
-        gap: 0rem 0rem !important;
-    }
 
-    .arrivals-list
-    {
+
+    .arrivals-list {
         display: none !important;
     }
 
-    .arrivals-list-1
-    {
+    .arrivals-list-1 {
         display: flex !important;
+    }
+
+    .deal-title {
+        display: flex;
+        width: 100vw;
+        position: relative;
+        justify-content: center;
+    }
+
+    .deal-para h2 {
+        font-size: 2rem !important;
+    }
+
+    .seller-cards {
+        position: relative ;
+        display: flex;
+        margin:2rem 0rem;
+
+    }
+    .seller-cards:hover
+    {
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px inset;
+    }
+    .arrival-cards
+    {
+        margin:0rem;
+    }
+    .arrival-cards:hover 
+    {
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px inset;
     }
 
 
 
+
+}
+
+@media(max-width:550px) {
+    .deal img {
+        height: 25rem !important;
+        object-fit: contain;
+    }
+
+    .deal {
+        gap: 0rem 0rem !important;
+        flex-direction: column;
+        padding: 0rem 0rem 0rem 0rem !important;
+    }
+
+    .deal-btn {
+        margin: 0rem 0rem 2rem 0rem !important;
+    }
 
 }
 
@@ -731,9 +1013,6 @@ header {
         display: none;
     }
 
-    .cards-section {
-        display: block;
-    }
 
 
 
@@ -974,18 +1253,33 @@ header {
         font-size: 1.5rem;
     }
 
-    .cards-section-2 .cards {
-        display: flex;
-        justify-content: space-around !important;
-    }
+
 
     .cards img {
         width: 13rem !important;
 
-     
+
 
     }
-   
+
+    .deal img {
+        height: 28rem;
+
+    }
+
+    .deal-info {
+        padding: 2rem 0rem 0rem 0rem !important;
+    }
+
+    .deal-para {
+        width: 5.9rem;
+        height: 5.9rem;
+    }
+
+    .deal {
+        padding: 0rem 7rem !important;
+    }
+
 }
 
 
@@ -1004,26 +1298,14 @@ header {
         margin: 5rem 1rem !important;
     }
 
-    .cards-section-1 {
-        display: none !important;
+    .border-section2 {
+        margin: 5rem 1rem !important;
     }
 
-    .cards-section-2 {
-        display: flex;
-    }
 
-    .cards-info {
-        gap: 1.5rem 0rem;
-    }
 
-    */ .cards-section-2 .cards {
-        justify-content: center;
-        gap: 0rem 2rem;
-    }
 
-    .cards-section-2 .cards img {
-        width: 15rem;
-    }
+
 
     header {
         padding: 1.8rem 4% !important;
@@ -1031,6 +1313,10 @@ header {
 
     .nav-icon {
         border-radius: 100% !important;
+    }
+
+    .deal {
+        padding: 0rem 10rem;
     }
 
 
@@ -1050,9 +1336,6 @@ header {
         display: none !important;
     }
 
-    .cards-section {
-        gap: 0rem 0.5rem !important;
-    }
 
     .items {
         gap: 0rem 3rem !important;

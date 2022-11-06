@@ -124,5 +124,53 @@ var swiper = new Swiper(".arrivals-slider", {
     },
   },
 });
+const countdown =() =>
+{
+  const countdate = new Date("Nov 29, 2022 00:00:00").getTime();
+  const now= new Date().getTime();
+  const gap = countdate -now;
+  const second = 1000;
+  const minute =second * 60;
+  const hour =minute * 60;
+  const day =hour * 24;
+ const textday=Math.floor(gap /day); 
+const texthour= Math.floor((gap % day) / hour);
+const textminute =Math.floor((gap % hour) /minute);
+const textsecond =Math.floor((gap % minute) /second);
+document.querySelector(".day").innerText= textday;
+document.querySelector(".hour").innerText=texthour;
+document.querySelector(".min").innerText=textminute;
+document.querySelector(".sec").innerText=textsecond;
 
 
+
+};
+
+setInterval(countdown, 1000);
+
+
+/*seller section js*/
+var swiper = new Swiper(".seller-slider", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 0,
+    },
+  },
+  
+
+});
